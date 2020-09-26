@@ -1,0 +1,12 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+.row {
+  @apply flex justify-center items-center py-20;
+}
+.row-indigo {
+  @apply bg-indigo-700;
+}
