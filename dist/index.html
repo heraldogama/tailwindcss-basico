@@ -27,10 +27,12 @@
           />
         </div>
         <div class="">
-          <ul
+          <!-- <ul class="md:flex md:flex-row md:justify-around hidden"> -->
+          <ul :class="{'flex flex-row justify-around hidden':!isOpen}" class="">
+            <!-- <ul
             :class="{'sm:hidden':!isOpen}"
             class="md:flex md:flex-row md:justify-around"
-          >
+          > -->
             <li><a class="text-white" href="">link</a></li>
             <li><a class="text-white" href="">link</a></li>
             <li><a class="text-white" href="">link</a></li>
@@ -67,7 +69,7 @@
         </div>
       </div>
     </div>
-    <div class="row row-indigo">
+    <div class="bg-indigo-700 flex items-center justify-center py-20">
       <button
         class="bg-white p-5 px-20 text-2xl font-black hover:bg-indigo-600 hover:text-white transition-all duration-1000 rounded-lg"
       >
@@ -110,8 +112,11 @@
     <script>
       var app = new Vue({
         el: "#app",
-        data: {
-          isOpen: false,
+        // data: {
+        //   isOpen: false,
+        // },
+        data() {
+          return { isOpen: false };
         },
       });
     </script>

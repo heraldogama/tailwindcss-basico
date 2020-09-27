@@ -4,9 +4,9 @@
 
 @import "tailwindcss/utilities";
 
-.row {
+/* .row {
   @apply flex justify-center items-center py-20;
 }
 .row-indigo {
   @apply bg-indigo-700;
-}
+} */
